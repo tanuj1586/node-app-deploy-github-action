@@ -19,6 +19,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: root
           key: ${{ secrets.SSH_KEY }}
+          port: 7576
           script: |
             cd /root/node-app-deploy-github-action
             git pull
